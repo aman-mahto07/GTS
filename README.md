@@ -15,7 +15,7 @@ To learn more about algokit, visit [documentation](https://github.com/algorandfo
 ### GitHub Codespaces
 
 ```
-[[LORA.png]]
+![[LORA.png]]
 
 ```
 
