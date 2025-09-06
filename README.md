@@ -14,10 +14,8 @@ To learn more about algokit, visit [documentation](https://github.com/algorandfo
 
 ### GitHub Codespaces
 
-```
 ![ss](LORA.png)
 
-```
 
 To get started execute:
 
