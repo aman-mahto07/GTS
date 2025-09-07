@@ -1,25 +1,75 @@
-# ALGORAND
-
-Welcome to your new AlgoKit project!
-
-This is your workspace root. A `workspace` in AlgoKit is an orchestrated collection of standalone projects (backends, smart contracts, frontend apps and etc).
-
-By default, `projects_root_path` parameter is set to `projects`. Which instructs AlgoKit CLI to create a new directory under `projects` directory when new project is instantiated via `algokit init` at the root of the workspace.
-
-## Getting Started
-
-To get started refer to `README.md` files in respective sub-projects in the `projects` directory.
-
-To learn more about algokit, visit [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/algokit.md).
-
-### GitHub Codespaces
-
-![ss](LORA.png)
 
 
-To get started execute:
+# 🃏 GuessSuit dApp
 
-1. `algokit generate devcontainer` - invoking this command from the root of this repository will create a `devcontainer.json` file with all the configuration needed to run this project in a GitHub codespace. [Run the repository inside a codespace](https://docs.github.com/en/codespaces/getting-started/quickstart) to get started.
-2. `algokit init` - invoke this command inside a github codespace to launch an interactive wizard to guide you through the process of creating a new AlgoKit project
+A decentralized game built on **Algorand** where users try to guess the correct suit. Are you feeling lucky?
+<img width="1600" height="773" alt="image" src="https://github.com/user-attachments/assets/74764e4c-173a-4868-8f8e-983a8f67bf73" />
+https://lora.algokit.io/testnet/application/745511299
+---
 
-Powered by [Copier templates](https://copier.readthedocs.io/en/stable/).
+## 📜 Project Description
+
+**GuessSuit** is a simple, smart contract-powered game built on the Algorand blockchain. It allows users to pick a card suit — **hearts**, **clubs**, **spades**, or **diamonds** — and see if their guess matches the winning suit.
+
+This project demonstrates how blockchain and smart contracts can power lightweight, trustless games with verifiable outcomes.
+
+---
+
+## 🚀 What It Does
+
+1. A user selects a suit (e.g., `"hearts"`).
+2. The smart contract compares the user's guess against a preset correct value.
+3. Returns `"correct"` if the guess matches the winning suit, or `"wrong"` otherwise.
+
+> ✅ Simple logic, fully decentralized execution.
+
+---
+
+## ✨ Features
+
+* 🔗 **Smart Contract on Algorand**: All logic runs on-chain using the Algorand blockchain.
+* 🎮 **Interactive Game Logic**: A quick and fun "guess the suit" game.
+* 📦 **Lightweight**: Minimal dependencies and efficient contract.
+* 🔐 **Verifiable Results**: Anyone can verify the contract's behavior on-chain.
+* 💡 **Educational**: Great example for beginners learning smart contracts on Algorand.
+
+---
+
+## 🔗 Deployed Smart Contract
+
+**Contract Address:** `XXX`
+
+> *(Replace `XXX` with the actual contract address once deployed)*
+
+---
+
+## 🛠️ Tech Stack
+
+* [Algorand](https://www.algorand.com/)
+* [algorand-typescript](https://github.com/algorandfoundation/algorand-typescript)
+
+---
+
+## 📁 Code Snippet
+
+```ts
+import { Contract } from "@algorandfoundation/algorand-typescript"
+
+export class GuessSuit extends Contract {
+  pick(suit: string): string {
+    const suits = ["hearts", "clubs", "spades", "diamonds"]
+    return suit === suits[0] ? "correct" : "wrong"
+  }
+}
+```
+
+---
+
+## 📌 Next Steps
+
+* [ ] Add randomness to the winning suit
+* [ ] Integrate frontend UI
+* [ ] Deploy on TestNet/MainNet
+* [ ] Add wallet support (AlgoSigner, Pera, etc.)
+
+---
