@@ -35,14 +35,6 @@ This project demonstrates how blockchain and smart contracts can power lightweig
 
 ---
 
-## 🔗 Deployed Smart Contract
-
-**Contract Address:** `XXX`
-
-> *(Replace `XXX` with the actual contract address once deployed)*
-
----
-
 ## 🛠️ Tech Stack
 
 * [Algorand](https://www.algorand.com/)
